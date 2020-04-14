@@ -185,7 +185,7 @@ class TrainingContext:
 
 
 def _sigmoid(x: float) -> float:
-    return 1 / (1 + np.exp(x))
+    return 1 / (1 + np.exp(-x))
 
 
 def _identity(cond: bool) -> int:
